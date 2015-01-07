@@ -1,0 +1,18 @@
+package com.server.proto.demo;
+//名字检查请求
+message NameCheckReq {
+	required string name = 1;
+}
+
+message NameCheckResp {
+	required bool isExist = 1 [default = false];
+}
+//发言请求
+message SayHelloReq {
+	required string content = 1;
+}
+//发言回包,应该通知给所有人
+message SayHelloResp {
+	required string speaker = 1; //发言者
+	required string content = 2;
+}
