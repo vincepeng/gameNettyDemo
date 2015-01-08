@@ -1,2 +1,7 @@
 # gameNettyDemo
-这是一个基于netty的java游戏后台开发框架,使用protobuf编码数据,使用一个short字节区分消息类型
+这是一个基于netty的java游戏后台开发框架,很初级但是和当前我司实际开发环境也比较类似.
+使用protobuf编码数据,使用一个short字节区分消息类型.
+用法:
+先搭建好protobuf环境,protobuf.exe放置在lib目录里面
+然后运行nettyServer;
+运行client1,client2,client3之一,可以自动连接服务端,服务端回包欢迎,对应客户端发送给服务端一句话,服务端push给所有在线玩家
